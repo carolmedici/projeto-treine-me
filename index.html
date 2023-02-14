@@ -11,19 +11,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<nav>
+    <a id="logo" href="#" target="_self" rel="next">
+        <img src="imagens/Logo.svg" alt="Treine.me">
+        </a>
 
-<div class="page">
-        <nav>
-            <a id="logo" href="#" target="_self" rel="next">
-            <img src="imagens/Logo.svg" alt="Treine.me">
-            </a>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+        
+    </div>
+        <nav id="nav" class="nav">
+           
             <ul>
                 <li><a href="#" target="_self" rel="next">Home</a></li>
                 <li><a href="#" target="_self" rel="next">Sobre</a></li>
                 <li><a href="#" target="_self" rel="next">Treinar</a></li>
             </ul>
+        </div>
         </nav>
     <body>
+        <div class="page">
     <main>
        <section>
            
@@ -31,14 +41,14 @@
            
            <p>Nós criamos treinos <strong>exclusivos e únicos para você</strong>. <br>Invista no seu corpo e <strong>tenha muito mais performance</strong> e qualidade de vida.</p>
                  
-           <a href="#" target="_blank" rel="external"><button> <img src="imagens/whats.png" alt="Ícone do WhatsApp"> COMECE JÁ</button></a>
+           <a href="#" target="_blank" rel="external"><button> <img id="whats" src="imagens/whats.png" alt="Ícone do WhatsApp">  COMECE JÁ</button></a>
 
        </section>
 
-       <img src="imagens/pulando-corda.png" alt="Mulher se excercitando pulando corda">
+       <img id="img" src="imagens/pulando-corda.png" alt="Mulher se excercitando pulando corda">
 
     </main>
-
+</div>
 </body>
 
 <img id="balls" src="imagens/balls.svg" alt="Bolinhas formando um quadrado no canto inferior direito da página">
@@ -47,5 +57,5 @@
     <p>Fale conosco no Instagram <strong><a href="#" target="_blank" rel="external">@treine.me</a></strong> </p>
 </footer>
 
-</div>
+</div><script src="script.js"></script>
 </html>

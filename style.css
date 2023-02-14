@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     /*FONTES*/
@@ -17,64 +21,14 @@
     --cor5: #e3fff861;
     --cor6: #7d7987;
     --cor7: #4EA788;
+
+    /*acessibilidade*/
+    font-size: 62.5%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin-bottom: 55px;
-    
-}
 
-ul{
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-around;
-    gap: 50px;
-}
 
-ul > li > a{
-    color: var(--cor1);
-    opacity: 0.5;
-    font-family: var(--font1);
-    font-size: 18px;
-    text-decoration: none;
-}
 
-ul li a:hover{
-    opacity: 1;
-    font-weight: bolder;
-}
-
-.page {
-    width: 1000px;
-    margin: 0 auto;
-    padding-top: 65px;
-  }
-
-body{
-    margin: 0;
-    min-height: 85vh;
-    background-image: linear-gradient(180deg, var(--cor4), var(--cor5) );
-  
-}
-main{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-h1{
-    color: var(--cor1);
-    font-size: 49px;
-    font-family: var(--font1);
-    width: 500px;
-    line-height: 56px;
-    font-weight: normal;
-}
 
 #exclusivo{ 
     font-weight: bolder;
@@ -83,24 +37,15 @@ h1{
 
 p{
     font-family: var(--font2);
-    font-size: 14px;
+    font-size: 1.4rem;
     color: var(--cor6);
-    line-height: 28px;
-    width: 450px;
-    padding: 40px 0px;
+    line-height: 2.8rem;
+    width: 42rem;
+    padding: 4rem 0;
+    text-align: center;
 }
 
-button{
-    background-color: var(--cor3);
-    font-family: var(--font2);
-    padding: 14px 32px 15px;
-    border-radius: 4px;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    gap: 12px;
-    border: 0px;
-}
+
 
 button:hover{
     background-color: var(--cor7);
@@ -112,8 +57,8 @@ a{
 
 #balls{
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
 
 footer p {
@@ -122,3 +67,241 @@ footer p {
    
 }
 
+@media (max-width: 60rem){
+
+   
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+
+
+    #menu {
+        z-index: 2;
+        background-color: white;
+       
+    }
+      
+    #menu-bar {
+        width: 3rem;
+        height: 4rem;
+        margin: 6rem 4rem 0 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: -3rem;
+        left: -7rem;
+    }
+      
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: var(--cor3);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+     }
+      
+    #bar1 {
+        transform: translateY(-4px);
+    }
+      
+    #bar3 {
+        transform: translateY(4px);
+    }
+      
+    .nav {
+        transition: 0.3s ease;
+        display: none;
+        background-color: white;
+        box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.262);
+    }
+      
+    .nav ul {
+        width: 20rem;
+        height: 40rem;
+    }
+      
+    .nav li {
+        list-style: none;
+        padding-top: 4rem;  
+        padding-left: 3rem ;      
+    }
+      
+    .nav li a {
+        color: var(--cor6);
+        font-size: 1.8rem;
+        text-decoration: none;        
+    }
+      
+    .nav li a:hover {
+        font-weight: bold;
+        color: var(--cor3);
+    }
+      
+    .menu-bg, #menu {
+        top: 0;
+        right: 1rem;
+        position: absolute;
+    }
+      
+    .menu-bg {
+        z-index: 1;
+        margin: 3rem 0 2rem 2rem;
+        background: white;
+        transition: 0.3s ease;
+    }
+      
+    .change {
+        display: block;
+        
+    }
+      
+    .change .bar {
+        background-color: var(--cor3);
+        position: relative;
+        left: 1rem;
+        top: 1rem;
+    }
+      
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+      
+    .change #bar2 {
+        opacity: 0;
+    }
+      
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+      
+      
+    .web{
+        margin: auto;
+        display: block;       
+    }
+
+
+body{
+    padding: 0 2rem;
+}
+
+button{
+    background-color: var(--cor3);
+    font-family: var(--font2);
+    padding: 1.4rem 3.2rem 1.5rem;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rempx;
+    border: 0px;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+#img{
+    position: ;
+}
+
+h1{
+    color: var(--cor1);
+    font-size: 4.9rem;
+    font-family: var(--font1);
+    width: 50rem;
+    line-height: 56px;
+    font-weight: normal;
+    padding-top: 3rem;
+        
+}
+
+
+
+}
+
+
+
+
+@media (min-width: 37.6rem){
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5rem;
+    gap: 5rem;
+}
+
+ul > li > a{
+    color: var(--cor1);
+    opacity: 0.5;
+    font-family: var(--font1);
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+}
+
+ul li a:hover{
+    opacity: 1;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ button{
+    background-color: var(--cor3);
+    font-family: var(--font2);
+    padding: 0.8rem 3.2rem 1.5rem;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    left: 13.5rem;
+    gap: 1.2rem;
+    border: 0px;
+}
+
+#whats{
+    padding-right: 1rem;
+    
+}
+
+.page {
+    width: 100rem;
+    margin: 0 auto;
+    padding-top: ;
+  }
+
+body{
+    margin: 0;
+    min-height: 85vh;
+    background-image: linear-gradient(180deg, var(--cor4), var(--cor5) );
+  
+}
+
+h1{
+    color: var(--cor1);
+    font-size: 4.9rem;
+    font-family: var(--font1);
+    width: 50rem;
+    line-height: 56px;
+    font-weight: normal;
+    
+}
+
+}
